@@ -25,7 +25,7 @@ def hello():
 
 @app.route('/health')
 def health():
-  return "HEALTHY", 200
+    return "HEALTHY", 200
 
 if __name__ == '__main__':
-    app().run(host='0.0.0.0')
+    app.run(host='0.0.0.0')
